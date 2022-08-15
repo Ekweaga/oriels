@@ -1,14 +1,14 @@
 <template>
- <HomeComponent/>
+ <router-view/>
 </template>
 
 <script>
-import HomeComponent from "./Home.vue"
+
 
 export default {
   name: 'App',
   components: {
-   HomeComponent
+   
   }
 }
 </script>
@@ -16,7 +16,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,800&family=Permanent+Marker&display=swap');
 
-body {
+body{
   font-family:Montserrat,Permanent Maker;
   margin:0;
   padding:0;

@@ -12,7 +12,7 @@
 
                  </p>
              </div>
-         <div class="headerbtn"><button>Create Now</button></div>
+         <div class="headerbtn"><button><router-link to="/login" style="color:white; text-decoration:none;">Create Now</router-link></button></div>
          </div>
     </div>
     <div>
@@ -61,10 +61,10 @@
     </div>
 
      <div class="gens">
-    <div class="gen">
+    <div class="gen1">
          <div>
             <h3>Easy to use template</h3>
-            <p>U Send estimates immediately to secure new jobs. Convert those estimates to invoices 
+            <p>U Send estimates immediately to new and old clients. Convert those estimates to invoices 
                 with a touch of a button..</p>
 
               
@@ -190,6 +190,18 @@ export default {
     gap:20px;
     align-items: center;
 }
+.gen1{
+    display:flex;
+    justify-content: space-around;
+    width:80%;
+    margin:30px auto;
+    gap:20px;
+    align-items: center;
+}
+.gen1 img{
+    width:500px;
+    height:300px;
+}
 .gen img{
     width:500px;
     height:300px;
@@ -210,6 +222,10 @@ export default {
     flex-direction:column;
     align-items: center;
     justify-content:center;
+}
+.numcounts h1{
+    font-size:20px;
+    margin-bottom:30px;
 }
 .numcounts button{
     width:200px;
@@ -263,10 +279,15 @@ export default {
 }
 .featured{
     height:250px;
+    margin-top:50px;
 }
 .featured h1{
     margin:20px;
+    margin-left:50px;
     color:gray;
+    text-align:left;
+    font-size:25px;
+    
 }
 .feature{
     display:flex;
@@ -321,6 +342,19 @@ export default {
     margin:30px auto;
     gap:20px;
     align-items: center;
+}
+.gen1{
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    width:80%;
+    margin:30px auto;
+    gap:20px;
+    align-items: center;
+}
+.gen1 img{
+    width:100%;
+    height:300px;
 }
 .gen img{
     width:100%;

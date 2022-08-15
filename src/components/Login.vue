@@ -1,5 +1,6 @@
 <template>
   <div className="login">
+      <h2 class=""  style="color:#FF7A22; font-size:30px">Oriels</h2>
       <div className='contact row'>
         <div className='col-12'><h2>Welcome back</h2>
           <p>Please login to continue</p>
@@ -13,13 +14,13 @@
             <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
             <label for="floatingPassword">Password</label>
           </div>
-        </div>
+        </div><br><br>
           <div className="accountsignup">
-            <span>Don't have an Account ? </span>
+            <span>Don't have an Account ? <router-link to="/signup" style="color:#FF7A22; text-decoration:none;">Sign up</router-link> </span>
           </div>
 
-        <button type="button" className="btn  mt-3" >
-          Login</button>
+       <div> <button type="button" className="btn  mt-3" >
+          Login</button></div>
 
       </div>
     </div>
@@ -37,5 +38,23 @@ export default {
 </script>
 
 <style>
-
+.login{
+  width:30%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:0px;
+}
+.login button{
+  width:300px;
+  background-color: #FF7A22;
+  color:white;
+}
+@media screen and (max-width:768px){
+  .login{
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:200px;
+}
+}
 </style>
