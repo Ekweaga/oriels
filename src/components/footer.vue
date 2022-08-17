@@ -30,14 +30,14 @@
          />
     
      <p>
-  Home
+ <router-link to="/" class="nav-link active" style="color:black;"> Home</router-link>
      </p>
-     <p>About Us</p>
+     <p><router-link to="/aboutus" class="nav-link active" style="color:black;">About Us</router-link></p>
       <p>
-     Login
+    <router-link to="/login" class="nav-link active" style="color:black;"> Login</router-link>
      </p>
      <p>
-    Sign up</p>
+   <router-link to="/signup" class="nav-link active" style="color:black;"> Sign up</router-link></p>
      
    </div>
   

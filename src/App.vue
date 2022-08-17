@@ -1,5 +1,6 @@
 <template>
- <router-view/>
+<div id="app">
+ <router-view/></div>
 </template>
 
 <script>
@@ -16,7 +17,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,800&family=Permanent+Marker&display=swap');
 
-body{
+body,*{
   font-family:Montserrat,Permanent Maker;
   margin:0;
   padding:0;
@@ -25,7 +26,9 @@ body{
 
 
 #app {
-  
+   font-family:Montserrat,Permanent Maker;
+  margin:0;
+  padding:0;
  
 }
 </style>
