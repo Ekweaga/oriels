@@ -16,7 +16,7 @@
               <p>There are 4 total invoices</p>
               </div>
                       
-                      <div>  <button @click="this.shows">add new invoice</button></div>
+                      <div>  <button @click="this.shows" className="btn m-3" style="background:#FF7A22; color:white">add new invoice</button></div>
 
             </div>
     </div>
@@ -41,7 +41,8 @@ export default {
   },
   data(){
     return{
-        show: false
+        show: false,
+        user:null
     }
   },
 
@@ -50,6 +51,16 @@ export default {
         this.show = !this.show
     }
   },
+
+  mounted(){
+    this.user = JSON.parse(localStorage.getItem('token'))
+    
+    if(!this.user){
+      this.$router.push("/login")
+    }
+    
+
+  }
    
 }
 </script>
@@ -76,7 +87,7 @@ export default {
 }
 .orielsapp{
    position:relative;
-   margin-bottom:1300px;
+   margin-bottom:1500px;
     display:flex;
     justify-content: space-between;
    
@@ -91,9 +102,10 @@ export default {
 }
 .orielsinvoices{
   display:flex;
-  justify-content:center;
+  justify-content:space-around;
   align-items:center;
-  width:70%;
+  width:100%;
+  margin-top:100px;
 }
 textarea{
     width:100%;

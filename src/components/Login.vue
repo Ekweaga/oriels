@@ -51,7 +51,10 @@ error:''
 
    else{
     try{
-      await signInWithEmailAndPassword(auth,this.email,this.pwd)
+      await signInWithEmailAndPassword(auth,this.email,this.pwd);
+      this.email = ""
+      this.pwd = ""
+      this.$router.push("/oriels")
    
      
    }

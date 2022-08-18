@@ -9,7 +9,8 @@
       <div class="navbar-nav" >
         <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
         <router-link class="nav-link" to="/aboutus">About Us</router-link>
-        <router-link class="nav-link" to="/login">Login</router-link>
+        <router-link class="nav-link" to="/login" v-if="this.token " @click="remove"> Logout</router-link>
+         <router-link class="nav-link" to="/login" v-if="this.token == undefined "> Login</router-link>
        
       </div>
     </div>
@@ -22,9 +23,25 @@
 
 export default {
   name: 'NavbarComponent',
+
+  data(){
+    return{
+      token:''
+    }
+  },
   components: {
    
+  },
+  created(){
+     this.token = JSON.parse(localStorage.getItem('token'))
+
+  },
+  methods:{
+    remove(){
+      localStorage.clear();
+    }
   }
+
 }
 </script>
 

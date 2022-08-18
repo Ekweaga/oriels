@@ -97,7 +97,7 @@
 
    </table>
 
-   <div><button>Add Item</button></div>
+   <div><button className="btn m-3" style="background:#FF7A22; color:white">Add Item</button></div>
 
    
   
@@ -107,14 +107,14 @@
     </div>
    
   <div class="orielsbtn">
-     <button onClick={handle} type="button" className="btn  mt-3" >
+     <button onClick={handle} type="button" className="btn  m-3" style="background:red; color:white" >
       Cancel</button>
-   <button onClick={handle} type="button" className="btn" >
+   <button onClick={handle} type="button" className="btn m-3" style="background:#FF7A22; color:white">
       Generate Invoice</button>
      
-       <button onClick={handle} type="button" className="btn  mt-3" >
+       <button onClick={handle} type="button" className="btn  m-3" style="background:green; color:white">
       Save as draft</button>
-       <button onClick={handle} type="button" className="btn  mt-3" >
+       <button onClick={handle} type="button" className="btn  m-3" style="background:#09093A; color:white" >
       Save as pending</button>
       </div>
    

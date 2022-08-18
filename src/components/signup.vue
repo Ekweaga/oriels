@@ -24,11 +24,11 @@
             <span>Already have an Account ? <router-link to="/login" style="color:#FF7A22; text-decoration:none;">Login</router-link> </span>
           </div>
 
-        <button type="button" className="btn  mt-3 ml-3" @click="signup">
-          Login</button>
+        <button type="button" className="btn  mt-3 " @click="signup">
+          Create account</button>
 
       </div>
-      <div>
+      <div style="color:red;">
           {{this.error ? this.error : null}}
       </div>
        <div>
@@ -63,8 +63,8 @@ export default {
  
     
 
-    if(this.email === "" || this.password === ""){
-      alert("empty")
+    if(this.email === "" || this.pwd === ""){
+      
       this.error="Fields are empty"
     }
     else if(this.pwd.length < 6){
@@ -80,6 +80,13 @@ export default {
         localStorage.setItem('token', JSON.stringify(response.user.refreshToken))
         
       });
+
+      this.success ="Account created successfully"
+      this.email = "" 
+       this.pwd = ""
+       setTimeout(()=>{
+        this.$router.push("/login")
+       },1000)
     
    }
    catch(err){

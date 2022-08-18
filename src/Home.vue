@@ -107,7 +107,7 @@
         <h1>Get Started for Free Today</h1>
         <p>Send your first invoice right now (it's free!)</p>
 
-        <div><button>GET STARTED</button></div>
+        <div><button><router-link to="/oriels" style="color:#FF7A22;text-decoration:none;"> GET STARTED</router-link></button></div>
     </div>
 
 </div>
