@@ -163,10 +163,12 @@ export default {
     height:400px;
     background: #FF7A22;
     color:white;
+    clip-path:polygon(0 1%, 100% 0%, 100% 96%, 0 75%);
 }
 .benefitsContainer h1{
     text-align:center;
     padding:20px;
+    font-size:25px;
 }
 .benefitsContainer{
     height:unset;
@@ -180,6 +182,7 @@ export default {
    
     width:80%;
     margin:100px auto;
+    font-size:14px;
 
 }
 .gen{
@@ -200,14 +203,14 @@ export default {
 }
 .gen1 img{
     width:500px;
-    height:300px;
+    height:500px;
 }
 .gen img{
     width:500px;
-    height:300px;
+    height:500px;
 }
 .gens{
-    height:400px;
+    height:max-content;
 }
 .num{
     height:200px;
@@ -237,7 +240,8 @@ export default {
     outline:none;
 }
 .playstore{
-    height:300px;
+    height:350px;
+    margin:100px 40px;
 }
 .playstoreContainer{
     display:flex;
@@ -258,6 +262,7 @@ export default {
     background:#FF7A22;
     height:450px;
  display:flex;
+ clip-path: polygon(0% 1%, 100% 0%, 100% 75%, 0% 100%);
  
  justify-content:center;
     color:white;
@@ -320,6 +325,13 @@ export default {
 }
 .Header img{
     width:100%;
+}
+.benefitsContainer{
+    width:100%;
+    height:1000px;
+    background: #FF7A22;
+    color:white;
+    clip-path:polygon(0 1%, 100% 0%, 100% 96%, 0 75%);
 }
 .benefits{
     display:flex;
