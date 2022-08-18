@@ -22,6 +22,10 @@
        <div> <button type="button" className="btn  mt-3" @click="login">
           Login</button></div>
 
+          <div style="color:red;">
+          {{this.error ? this.error : null}}
+      </div>
+
       </div>
     </div>
 </template>
@@ -61,6 +65,8 @@ error:''
    catch(err){
      console.log(err)
      this.error = err.message
+     this.email = ""
+     this.pwd = ""
      
    }
 
