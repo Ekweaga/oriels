@@ -18,7 +18,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,800&family=Permanent+Marker&display=swap');
 
 body,*{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Montserrat , Permanent Maker;
   margin:0;
   padding:0;
 }

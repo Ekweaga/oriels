@@ -10,7 +10,7 @@
 
     <div class="Aboutus">
       <div>
-            <img src="@/assets/invoice.png"/>
+            <img src="@/assets/header-image.png"/>
       </div>
        <div>
          <p>
@@ -87,6 +87,10 @@ export default {
    margin:0 auto;
    gap:20px;
 
+}
+.Aboutus img{
+   width:350px;
+   height:350px;
 }
 .values{
    background:#EDEFF3;

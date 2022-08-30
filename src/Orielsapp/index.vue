@@ -1,14 +1,16 @@
 <template>
+
 <div>
     <NavbarComponent/>
- </div>
+ </div><br>
+ <ModalComponent/>
  <div class="orielscontainer">
    
     <div class="orielsapp">
-
+    
         <div >
           <transition name="invoice">
-       <InvoiceModalComponent display="this.show" v-if="this.show"/></transition>
+       <InvoiceModalComponent v-if="modal"/></transition>
        </div>
 
             <div class="orielsinvoices">
@@ -16,7 +18,7 @@
               <p>There are 4 total invoices</p>
               </div>
                       
-                      <div>  <button @click="this.shows" className="btn m-3" style="background:#FF7A22; color:white">add new invoice</button></div>
+                      <div>  <button @click="toggle" className="btn m-3" style="background:#FF7A22; color:white">Add new invoice</button></div>
 
             </div>
     </div>
@@ -32,27 +34,43 @@
 import NavbarComponent from "../components/Navbar.vue"
 import FooterComponent from "../components/footer.vue"
 import InvoiceModalComponent from "../components/invoiceModal.vue"
+import ModalComponent from "../components/modal.vue"
+import {mapState} from "vuex"
+import {mapMutations} from "vuex"
+
 export default {
    name:"OrielComponent",
    components: {
    NavbarComponent,
    FooterComponent,
-   InvoiceModalComponent
+   InvoiceModalComponent,
+   ModalComponent
   },
   data(){
     return{
         show: false,
-        user:null
+        user:null,
+        log:null
     }
   },
+created(){
 
+},
   methods:{
+    ...mapMutations(['TOGGLE_INVOICE']),
     shows(){
         this.show = !this.show
+    },
+    toggle(){
+          this.TOGGLE_INVOICE()
     }
   },
-
+computed:{
+...mapState(['modal'])
+},
   mounted(){
+    
+      console.log("mounted")
     this.user = JSON.parse(localStorage.getItem('token'))
     
     if(!this.user){
@@ -87,7 +105,7 @@ export default {
 }
 .orielsapp{
    position:relative;
-   margin-bottom:1500px;
+   margin-bottom:1900px;
     display:flex;
     justify-content: space-between;
    

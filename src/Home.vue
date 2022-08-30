@@ -45,14 +45,14 @@
  <div class="gens">
     <div class="gen">
         <div>
-            <img src="./assets/ab1.jpg"/>
+            <img src="./assets/details-1.png"/>
         </div>
         <div>
             <h3>Online invoice generator</h3>
             <p>Use our invoice generator to manage your invoicing from any device, anytime. 
                 Your account is always connected and your data is saved securely for you.</p>
 
-                <div><span style="color:#FF7A22;">Generate Invoice Now</span></div>
+                <div><span style="color:#FF7A22; width:250px;">Generate Invoice Now</span></div>
         </div>
     </div>
 
@@ -71,7 +71,7 @@
         </div>
 
         <div>
-            <img src="./assets/ab1.jpg"/>
+            <img src="./assets/header-image.png"/>
         </div>
        
     </div>

@@ -25,6 +25,6 @@ const projectstorage = getStorage(app);
 const auth = getAuth(app)
 
 
-export {projectstorage, projectfirestore,auth}
+export {projectstorage, projectfirestore,auth,app}
 
 
