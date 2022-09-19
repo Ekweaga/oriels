@@ -1,8 +1,11 @@
 <template>
   <div className="login">
+      <div style="color:white; width:300px; padding:5px;" class="error mb-3" v-if="this.error">
+          {{this.error ? this.error : null}}
+      </div>
       <h2 class=""  style="color:#FF7A22; font-size:30px">Oriels</h2>
       <div className='contact row'>
-        <div className='col-12'><h2>Welcome back</h2>
+        <div className='col-12 text-sm'><h2 style=" font-size:18px">Welcome back</h2>
           <p>Please login to continue</p>
         </div>
         <div className='col-l2'>
@@ -14,17 +17,11 @@
             <input type="password" className="form-control" id="floatingPassword" placeholder="Password" v-model="this.pwd"/>
             <label for="floatingPassword">Password</label>
           </div>
-        </div><br><br>
-          <div className="accountsignup">
-            <span>Don't have an Account ? <router-link to="/signup" style="color:#FF7A22; text-decoration:none;">Sign up</router-link> </span>
-          </div>
-
-       <div> <button type="button" className="btn  mt-3" @click="login">
+        </div>
+         <span style="color:black; margin-bottom:-30px">Don't have an Account ? <router-link to="/signup" style="color:#FF7A22; text-decoration:none;">Sign up</router-link> </span>
+       <div class="col-12"> <button type="button" className="btn mt-3" @click="login">
           Login</button></div>
-
-          <div style="color:red;">
-          {{this.error ? this.error : null}}
-      </div>
+        
 
       </div>
     </div>

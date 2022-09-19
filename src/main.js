@@ -8,7 +8,8 @@ const store =  createStore({
     state:{
         modal:false,
         modalActive:false,
-        invoiceData:[]
+        invoiceData:[],
+        authUser:null
     },
     mutations:{
         TOGGLE_INVOICE(state){
@@ -16,12 +17,11 @@ const store =  createStore({
         },
             TOGGLE_Modal(state){
                 state.modalActive = !state.modalActive
-            }
+            },
+          
     },
     actions:{
-       async GET_INVOICES(){
-
-       }
+     
     },
     modules:{}
 })

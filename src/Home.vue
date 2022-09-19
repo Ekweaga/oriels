@@ -52,7 +52,7 @@
             <p>Use our invoice generator to manage your invoicing from any device, anytime. 
                 Your account is always connected and your data is saved securely for you.</p>
 
-                <div><span style="color:#FF7A22; width:250px;">Generate Invoice Now</span></div>
+                <div><span style="color:#FF7A22; width:250px;"><router-link to="/oriels" style="color:#FF7A22; text-decoration:none;" >Generate Invoice Now</router-link></span></div>
         </div>
     </div>
 
@@ -250,7 +250,7 @@ export default {
     justify-content:center;
 }
 .playstoreContainer img{
-    width:250px;
+    width:150px;
     margin:15px;
 }
 .playstorewrite{
@@ -381,6 +381,11 @@ export default {
 }
 .feature{
     flex-direction:column;
+}
+.playstoreContainer img{
+    width:150px;
+    margin:0px;
+    margin-bottom:20px;
 }
 }
 </style>

@@ -92,6 +92,9 @@ export default {
    width:350px;
    height:350px;
 }
+.Aboutus p{
+   text-align:justify;
+}
 .values{
    background:#EDEFF3;
    height:350px;
